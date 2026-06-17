@@ -1,93 +1,92 @@
-# 2026 Annual Meeting — Financial Update Deck
+# 2026 Annual Meeting — Financial Update
 
-Two files were generated together:
+The treasurer's financial presentation for the 34 Plaza Owners Corp. 2026 Annual Shareholder Meeting: an 8-slide deck that takes a non-financial audience from the prior year's results through the year ahead and out to the five-year capital horizon, with every figure traced back to the audited financials or the board-approved budget.
 
-| File | What it is |
-|---|---|
-| `2026 Annual Meeting - Financial Update.pptx` | The 8-slide deck (modern minimal, navy + amber accents). |
-| `Financial Update - Source Data.xlsx` | All numbers behind every chart, organized one tab per slide. Edit the **blue-text** cells to update inputs. |
+## The story it tells
 
-The outline (`Financial Update - Outline & Plan.md`) is the narrative/planning doc — useful for the talk track.
+The deck is built around a three-act arc:
 
----
+1. **2025 — we got ahead of capital needs.** Operations ran slightly hot, but a board-approved two-year assessment more than doubled the reserve fund (from $500K to $1.14M), and the audit closed with a clean, unmodified opinion.
+2. **2026 — a 5.5% maintenance increase holds operations at breakeven** while absorbing real cost pressure: insurance up 10%, payroll up 6.2% ahead of the 32BJ contract, and taxes up 2%. The increase is in line with the building's long-run norm, not an outlier.
+3. **2027–2030 — the five-year capital plan, and the one variable that actually matters.** ~$2.19M of capital work, dominated by the elevator modernization, with reserves holding at or above the three-month operating benchmark through 2028. The real risk isn't the capital plan — it's the $5.618M mortgage maturing December 2028.
 
-## How to convert these to Google Slides + Google Sheets (and link the charts)
+## The analytical calls behind it
 
-### Step 1 — Convert each file to Google format
+The presentation isn't just a reporting exercise; it makes and defends two judgment calls that a skeptical shareholder could push on:
 
-1. Open **Google Drive** → upload `Financial Update - Source Data.xlsx`.
-2. Right-click the uploaded file → **Open with → Google Sheets**.
-3. Once opened, **File → Save as Google Sheets** (or the duplicate auto-converts). Keep the converted version.
-4. Repeat for `2026 Annual Meeting - Financial Update.pptx` → open with Google Slides → save as Google Slides.
+- **Sidewalks — targeted tile repair, not full replacement.** Full replacement would have cost ~$300K in 2026; the targeted repair runs ~$35K. The deck frames the ~$265K difference as a deliberate, reversible board decision that preserves reserve capacity ahead of the elevator project — not a deferral of needed work. The sidewalks are structurally sound, and the repair carries no compliance penalty.
+- **No new assessment is required to execute the plan.** Modeling the reserve trajectory under the targeted-repair scenario shows the existing $262.5K/yr capital contribution (escalating ~5%) is correctly sized. Reserves stay at or above the three-month benchmark through 2028, dip ~$88K at the 2029 trough, and recover by 2030. Naming the 2028 refinancing — not the capital cadence — as the variable to watch is the central message of the closing slides.
 
-### Step 2 — Replace each embedded chart with a linked chart from the Sheet
-
-For each chart slide listed below:
-
-1. In Google Slides, click the existing chart and **Delete** it.
-2. Click where the chart was → **Insert → Chart → From Sheets**.
-3. Pick the Google Sheets version of `Financial Update - Source Data`.
-4. Select the chart range from the matching tab (see table below).
-5. Make sure **"Link to spreadsheet"** is checked, then **Import**.
-6. Resize to fit. From now on, edits to blue cells in the Sheet propagate to the deck via the "Update" button on the chart.
-
-| Slide | Chart | Source tab | Range to select |
-|---|---|---|---|
-| 3 | Income donut | `Slide3_BudgetMix` | `A5:B15` |
-| 3 | Expense donut | `Slide3_BudgetMix` | `A20:B28` |
-| 4 | 12-yr maintenance bars | `Slide4_MaintHistory` | `A5:C17` (use Year + % Increase columns) |
-| 5 | Reserve waterfall | `Slide5_ReserveWaterfall` | `A5:C13` (use Step + Running Balance) |
-| 6 | Capital plan stacked column | `Slide6_CapitalPlan` | `A21:F29` |
-| 7 | Reserves vs benchmark | `Slide7_ReserveProj` | `A12:F13`, `A20:F20`, `A22:F22` (the three rows for chart) |
-
-> Tip: it's often easier to first set up a clean chart **inside the Google Sheet** (one chart per tab, pre-styled), then use Insert → Chart → From Sheets and point to the existing chart rather than a range. That way the styling lives with the Sheet and the deck just embeds it.
-
----
-
-## Where the inputs live (the cells you'll edit most often)
-
-| Tab | Cells you'll touch |
-|---|---|
-| `Headlines` | All blue cells — flow into Slide 2 tiles and Slide 8 takeaways |
-| `Slide3_BudgetMix` | Column B (income lines & expense lines) — % shares recalculate |
-| `Slide4_MaintHistory` | Column C (% increase) for the bar chart; rows 24–26 for the driver tiles |
-| `Slide5_ReserveWaterfall` | Column B (each waterfall step). Running balance auto-updates. |
-| `Slide6_CapitalPlan` | Columns B–F (project × year). Category totals auto-roll up via SUMIF. |
-| `Slide7_ReserveProj` | Yellow-highlighted assumption cells in B5–B9 (opening reserve, contribution, growth rates) drive the full 5-year projection. Project spending row is hardcoded to the targeted-tile-repair scenario. |
-
----
-
-## Scenario flexibility (e.g., to test a different sidewalk option)
-
-To swap the sidewalks scenario back to full replacement:
-1. Go to `Slide6_CapitalPlan` tab.
-2. In the **Sidewalks (Targeted Tile Repair)** row, change the **2026** cell from `$35,000` to `$300,000`.
-3. Update the **Sidewalk decision callout** at the bottom of the tab if needed.
-4. Then in `Slide7_ReserveProj`, update row 17 (Project Spending) for 2026: change from `-279000` to `-544000` to match the new total.
-5. The reserve trajectory and coverage % will recalculate automatically.
-
-The board decision callout on Slide 6 of the deck is hardcoded text — you'll want to edit those text boxes manually if you change the scenario.
-
----
-
-## Style reference
-
-- **Header font:** Georgia, bold
-- **Body font:** Calibri
-- **Palette:**
-  - Navy `#1E5A8C` (primary)
-  - Amber `#D97706` (callouts & "watch this" items)
-  - Green `#10804A` (positive outcomes)
-  - Muted gray `#6B7280` (secondary text)
-  - Charcoal `#1F2328` (body text)
-- **Layout:** 16:9, 0.6" margin, hairline rule under each title, page number bottom-right, footer bottom-left.
-
----
+Every chart is driven off a single source-data workbook, one tab per slide, so the numbers behind the narrative stay reproducible and any input can be changed without rebuilding the deck.
 
 ## Files in this folder
 
-- `2026 Annual Meeting - Financial Update.pptx` — the deck (this is what you import to Google Slides)
-- `Financial Update - Source Data.xlsx` — the source workbook (this is what you import to Google Sheets)
-- `Financial Update - Outline & Plan.md` — the narrative outline used to build the deck
-- `Financial Update - README.md` — this file
-- The historical source documents (audited financials PDF, 2026 budget PDF, capital plan gsheet) remain untouched.
+| File | What it is |
+|---|---|
+| `2026 Annual Meeting - Financial Update.pptx` | The 8-slide deck (modern minimal — navy + amber accents). |
+| `Financial Update - Source Data.xlsx` | Every figure behind every chart, one tab per slide. Blue-text cells are inputs. |
+| `Financial Update - Outline & Plan.md` | The treasurer's pre-build slide plan and the consolidated table of key numbers — the narrative spine and the talk track. |
+| `34_Plaza_Capital_Plan_-_Updated_March_2026.xlsx` | Project-level capital plan (Targeted Tile Repair scenario in use). |
+| `capital plan 2026+.gsheet` | Pointer to the live capital plan in Google Sheets. |
+
+The historical source documents (audited financials, 2026 budget) remain untouched in their original form.
+
+---
+
+## Appendix — working with the deck
+
+<details>
+<summary>Converting to Google Slides + Sheets and keeping charts linked</summary>
+
+**Convert each file.** Upload the `.xlsx` and `.pptx` to Google Drive, open each with Google Sheets / Google Slides, and save as the Google-native format.
+
+**Re-link each chart.** In Slides, delete the embedded chart, then **Insert → Chart → From Sheets**, point to the converted source workbook, and check **"Link to spreadsheet."** After that, edits to blue input cells propagate to the deck via the chart's "Update" button.
+
+| Slide | Chart | Source tab | Range |
+|---|---|---|---|
+| 3 | Income / expense donuts | `Slide3_BudgetMix` | `A5:B15`, `A20:B28` |
+| 4 | Maintenance history bars | `Slide4_MaintHistory` | `A5:C17` (Year + % Increase) |
+| 5 | Reserve waterfall | `Slide5_ReserveWaterfall` | `A5:C13` (Step + Running Balance) |
+| 6 | Capital plan stacked column | `Slide6_CapitalPlan` | `A21:F29` |
+| 7 | Reserves vs. benchmark | `Slide7_ReserveProj` | `A12:F13`, `A20:F20`, `A22:F22` |
+
+Tip: pre-style one chart per tab inside the Sheet, then embed via Insert → Chart → From Sheets so styling lives with the data.
+
+</details>
+
+<details>
+<summary>Where the inputs live</summary>
+
+| Tab | Cells to edit |
+|---|---|
+| `Headlines` | All blue cells — feed Slide 2 tiles and Slide 8 takeaways |
+| `Slide3_BudgetMix` | Column B (income/expense lines); % shares recalculate |
+| `Slide4_MaintHistory` | Column C (% increase); rows 24–26 for driver tiles |
+| `Slide5_ReserveWaterfall` | Column B (each step); running balance auto-updates |
+| `Slide6_CapitalPlan` | Columns B–F (project × year); totals roll up via SUMIF |
+| `Slide7_ReserveProj` | Yellow assumption cells B5–B9 drive the 5-year projection |
+
+</details>
+
+<details>
+<summary>Swapping the sidewalk scenario back to full replacement</summary>
+
+1. In `Slide6_CapitalPlan`, change the **Sidewalks (Targeted Tile Repair)** 2026 cell from `$35,000` to `$300,000`.
+2. In `Slide7_ReserveProj`, change row 17 (Project Spending) 2026 from `-279000` to `-544000`.
+3. The reserve trajectory and coverage % recalculate automatically.
+4. The board-decision callout text on Slide 6 of the deck is hardcoded — edit those text boxes by hand.
+
+</details>
+
+<details>
+<summary>Style reference</summary>
+
+- **Fonts:** Georgia bold (headers), Calibri (body)
+- **Palette:** Navy `#1E5A8C` · Amber `#D97706` (callouts) · Green `#10804A` (positives) · Gray `#6B7280` (secondary) · Charcoal `#1F2328` (body)
+- **Layout:** 16:9, 0.6" margin, hairline rule under each title, page number bottom-right, footer bottom-left.
+
+</details>
+
+---
+
+*Prepared by the treasurer of 34 Plaza Owners Corp. Working analysis — not an official statement of the corporation.*
