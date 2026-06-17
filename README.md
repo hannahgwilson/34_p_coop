@@ -19,6 +19,7 @@ What I do **not** outsource: every number is sourced back to an audited or board
 | Path | What it is |
 |---|---|
 | [2026_financial_presentation/](2026_financial_presentation/) | The 2026 Annual Meeting financial update — deck, source-data workbook, narrative outline, and capital plan. See its own [README](2026_financial_presentation/README.md) for the build/handoff details. |
+| [lease_npv_comparison/](lease_npv_comparison/) | NPV model comparing two commercial lease offers from the building-owner perspective — accounts for rent income, tenant-improvement costs, vacancy risk, and time-value discounting. See its own [README](lease_npv_comparison/README.md) for the model logic and iteration history. |
 
 ### `2026_financial_presentation/`
 
@@ -27,6 +28,11 @@ What I do **not** outsource: every number is sourced back to an audited or board
 - **`34_Plaza_Capital_Plan_-_Updated_March_2026.xlsx`** — project-level capital plan (the Targeted Tile Repair scenario is the one in use).
 - **`capital plan 2026+.gsheet`** — Google Sheets pointer to the live capital plan.
 - **`README.md`** — how to convert the deck/workbook to Google Slides + Sheets and keep the charts linked.
+
+### `lease_npv_comparison/`
+
+- **`Lease_NPV_Comparison.xlsx`** — interactive two-lease NPV model. Toggle the blue/yellow input cells (rent, term, investment, vacancy, discount rate) to compare scenarios. Both leases evaluated over the same horizon with vacancy cycling.
+- **`README.md`** — model documentation, the decision context, and a step-by-step record of how the model was iterated from a naive cost comparison to a proper landlord-perspective analysis with vacancy risk.
 
 ## Conventions
 
